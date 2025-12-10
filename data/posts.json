@@ -1,0 +1,41 @@
+[
+  {
+    "slug": "sample-1",
+    "title": "对抗虚无的方式",
+    "date": "2024-01-15T00:00:00.000Z",
+    "tags": [
+      "哲学",
+      "极简主义"
+    ],
+    "summary": "在无尽的黑暗中，我们能做的只是点燃一根火柴。即使明知它会熄灭，即使明知光芒微弱，但这微不足道的努力，正是我们存在的证明。",
+    "cover": "/dark-minimalist-abstract-void-cosmos.jpg",
+    "readingTime": 1,
+    "contentHtml": "<p>在西西弗斯推石上山的神话中，加缪看到了人类存在的荒诞。石头永远会滚下来，努力永远不会有结果。但正是在这种明知不可能的坚持中，西西弗斯找到了自己的意义。</p>\n<h2>虚空的本质</h2>\n<p>我们生活在一个巨大的虚空中。宇宙的尺度让我们显得如此渺小，时间的长河让我们的生命显得如此短暂。在这样的背景下，个体的努力似乎毫无意义。</p>\n<p>但这正是极简主义的核心洞察：在巨大的虚空面前，我们不需要宏大的叙事，不需要复杂的装饰。我们需要的，是那一点点真实的、微不足道的努力。</p>\n<blockquote>\n<p>即使知道不可能，但仍然去做。</p>\n</blockquote>\n<h2>微光的意义</h2>\n<p>在黑暗中点燃一根火柴，光芒微弱，但它是真实的。这就是我们能做的全部，也是我们应该做的全部。不是因为它会改变世界，而是因为它证明了我们的存在。</p>\n<p>留白不是空无一物，而是给予思考的空间。负空间让我们能够看清那微弱的光芒。在极简的设计中，每一个元素都变得重要，每一个努力都变得可见。</p>\n<h2>持续的行动</h2>\n<p>这不是悲观主义，而是清醒的现实主义。我们接受虚无的存在，但不被它击败。我们继续写作，继续创造，继续在虚空中留下痕迹。</p>\n<p>就像西西弗斯推着石头，我们继续前行。不是因为相信终点，而是因为前行本身就是意义。</p>\n<h2>虚空中的痕迹</h2>\n<p>写作是一种对抗虚无的方式。每一个字，每一个句子，都是在黑暗中划出的一道光痕。它们微弱，但真实存在。它们短暂，但曾经发光。</p>\n<p>我们不追求永恒，因为永恒本身就是一个幻觉。我们追求的是此刻的真实，是当下的努力，是明知不可能却依然去做的勇气。</p>\n<p>这就是极简主义的终极意义：剥离一切装饰，直面虚空，然后在虚空中留下属于自己的微光。</p>\n"
+  },
+  {
+    "slug": "sample-2",
+    "title": "使用 Obsidian 和 Git 构建博客工作流",
+    "date": "2024-01-10T00:00:00.000Z",
+    "tags": [
+      "工作流",
+      "Obsidian"
+    ],
+    "summary": "极简主义不仅是设计哲学，更是一种工作方式。用最简单的工具构建高效的写作系统，让创作回归本质。",
+    "cover": "/single-candle-flame-in-complete-darkness-minimalis.jpg",
+    "readingTime": 1,
+    "contentHtml": "<h2>为什么选择极简工作流</h2>\n<ul>\n<li>写作核心是内容，不是工具。工具越轻，摩擦越小。</li>\n<li>笔记即资产，最好存成纯文本，版本可追踪。</li>\n<li>发布应当自动化，减少重复劳动。</li>\n</ul>\n<h2>基本结构</h2>\n<pre><code>notes/        # Obsidian 里的原始 Markdown\nscripts/      # 同步/转换脚本\napp/posts/    # 站点的页面入口\ndata/posts.json # 由脚本生成，构建期读取\n</code></pre>\n<h2>操作步骤</h2>\n<ol>\n<li>在 Obsidian 里写作，按约定的 frontmatter（slug、title、date、tags、summary、cover）。</li>\n<li>运行同步脚本（本地或 CI）把 notes 转为 data/posts.json。</li>\n<li>Next.js 构建时读取 JSON，静态导出。</li>\n<li>GitHub Actions 自动部署到 Pages。</li>\n</ol>\n<h2>约定的 Frontmatter</h2>\n<ul>\n<li>slug: 页面路径，唯一，例如 <code>my-first-note</code></li>\n<li>title: 标题</li>\n<li>date: <code>YYYY-MM-DD</code></li>\n<li>tags: 数组</li>\n<li>summary: 简短摘要</li>\n<li>cover: 可选，指向 public 下图片路径</li>\n</ul>\n<h2>进一步优化</h2>\n<ul>\n<li>用阅读时长（词数/200）在列表展示。</li>\n<li>支持草稿：frontmatter 里 <code>draft: true</code> 时跳过导出。</li>\n<li>每次同步前校验必填字段，避免构建时才报错。</li>\n</ul>\n"
+  },
+  {
+    "slug": "sample-3",
+    "title": "留白的力量",
+    "date": "2024-01-05T00:00:00.000Z",
+    "tags": [
+      "设计",
+      "UI/UX"
+    ],
+    "summary": "负空间不是空无一物，而是给予思考的空间。在设计中，我们通过留白来强调重要的事物，在虚空中凸显微光。",
+    "cover": "/vast-empty-dark-landscape-with-distant-light-horiz.jpg",
+    "readingTime": 1,
+    "contentHtml": "<h2>什么是留白</h2>\n<p>留白让信息有呼吸感。它不是空缺，而是有意的设计，帮助视线聚焦。</p>\n<h2>如何使用留白</h2>\n<ul>\n<li>聚焦：把关键元素周围腾出空间。</li>\n<li>分组：用间距而非线条来分隔。</li>\n<li>节奏：大留白带来缓冲，小留白带来紧凑。</li>\n</ul>\n<h2>留白与情绪</h2>\n<p>深色背景加柔和的光点，让情绪沉静；留白让这种情绪有回旋的余地。</p>\n<h2>行动建议</h2>\n<ol>\n<li>先决定层级，再放元素。</li>\n<li>不确定时，多给一点空间。</li>\n<li>让每个留白都有理由。</li>\n</ol>\n"
+  }
+]
