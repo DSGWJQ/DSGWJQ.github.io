@@ -34,8 +34,11 @@ function formatDate(date: string) {
   return d.toISOString().slice(0, 10).replace(/-/g, ".")
 }
 
-export default function PostPage({ params }: { params: { slug: string } }) {
-  const post = postsData.find((p) => p.slug === params.slug)
+type PostParams = { slug: string }
+
+export default async function PostPage({ params }: { params: PostParams | Promise<PostParams> }) {
+  const { slug } = await params
+  const post = postsData.find((p) => p.slug === slug)
 
   if (!post) return notFound()
 
